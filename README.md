@@ -100,7 +100,7 @@ Send user query to gpt-4o and compare rsponses with RAG injection, and baseline.
 6. Evaluate
 Evaluate using jaccard, response length, gpt-4o evaluations on 1-10 scale.
 
-![System Architecture](rag1.drawio.png)
+![System Architecture](rag2.drawio.png)
 
 ---
 
@@ -132,8 +132,10 @@ Results are displayed in **tables and bar charts**, comparing:
     - **Average Score Overlay**  
 - **Cosine Similarity Histogram** (*for Retrieved Chunks*)  
 
+---
 
+### Live Site for DEMO
 
-
+**https://rag-depression.streamlit.app/**
 
 
