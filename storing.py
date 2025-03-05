@@ -17,7 +17,9 @@ def connect_db():
     Connect to Supabase PostgreSQL using Transaction Pooler.
     """
     try:
+        print("connecting to supabase..")
         conn = psycopg2.connect(os.getenv("postgres"))
+        print("connection successful")
         return conn
     except Exception as e:
         print(f"Error connecting to Supabase: {e}")
