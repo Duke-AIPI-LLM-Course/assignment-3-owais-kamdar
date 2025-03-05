@@ -100,8 +100,6 @@ def retrieve_top_chunks(query, top_k=5):
         return []
 
     finally:
-        if 'cur' in locals():
-            cur.close()
-        if 'conn' in locals():
+        if conn:
             conn.close()
 

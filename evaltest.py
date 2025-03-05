@@ -3,17 +3,16 @@
 from eval import plot_results, evaluate_rag
 
 if __name__ == "__main__":
-    # Define test queries
+    # test queries
     queries = [
         "What are the symptoms of depression?",
         "How is depression treated?",
         "What are common risk factors for depression?"
     ]
     
-    # Evaluate each query
     results = [evaluate_rag(q) for q in queries]
 
-    # Print actual responses for qualitative review
+    # print thorough responses
     for res in results:
         print("\n" + "=" * 100)
         print(f"**Query:** {res['Query']}")
