@@ -58,7 +58,7 @@ CREATE TABLE embeddings (
 ```
 
 ### 3. Set up .env file with postgres key and openai apikey
-Use connection string from supabase in python (direct connection)
+Use connection string from supabase in python (session pooler)
 ```
 openai_key = xxxx
 postgres_url = xxx

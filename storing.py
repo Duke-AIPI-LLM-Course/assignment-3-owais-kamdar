@@ -14,7 +14,7 @@ load_dotenv()
 
 def connect_db():
     """
-    Connect to Supabase PostgreSQL using Transaction Pooler.
+    Connect to Supabase PostgreSQL using session pooler.
     """
     try:
         print("connecting to supabase..")
